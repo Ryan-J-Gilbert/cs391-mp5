@@ -1,6 +1,7 @@
 "use server"
 
-const BASE_URL = "http://localhost:3000/r/";
+// const BASE_URL = "http://localhost:3000/r/";
+const BASE_URL = process.env.BASE_URL as string;
 
 import getCollection, { URL_COLLECTION } from "@/lib/db";
 
