@@ -1,6 +1,8 @@
 import { MongoClient, Db, Collection } from "mongodb";
 
 const MONGO_URI = process.env.MONGO_URI as string;
+console.log(MONGO_URI.substring(0,5));
+
 if (!MONGO_URI) {
     throw new Error("NO API key");
 }
